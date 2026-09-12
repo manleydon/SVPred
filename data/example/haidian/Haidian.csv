@@ -1,0 +1,3 @@
+wgs84_lat,wgs84_lng,Filename,population_density_2020,population,Carbon,log_Carbon,BuildingHeight,streetview_files
+0.0,0.0,sat_001.png,1000.0,7.0,6000.0,8.7,11.5,sv_001_a.jpg;sv_001_b.jpg
+0.01,0.01,sat_002.png,900.0,6.8,5500.0,8.6,10.9,sv_002_a.jpg

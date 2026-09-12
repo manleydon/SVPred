@@ -1,0 +1,12 @@
+numpy
+pandas
+Pillow
+matplotlib
+requests
+scikit-learn
+scipy
+torch
+torchvision
+tqdm
+transformers
+rasterio

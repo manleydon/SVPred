@@ -1,0 +1,12 @@
+[
+  {
+    "area": "100_200",
+    "images": [
+      "satellite_image/ExampleCity/100_200.png",
+      "street_view_image/Mapillary/image/100_200/view_01.jpg",
+      "street_view_image/Mapillary/image/100_200/view_02.jpg"
+    ],
+    "prompt": "Synthetic example item. Estimate the target value for this area from the satellite image and the street-view photos.",
+    "reference": 7.5
+  }
+]
