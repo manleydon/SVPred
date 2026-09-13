@@ -9,14 +9,12 @@ fixed-model distance replacement, and fold/raster integrity audits.
 
 ## Scope and data restrictions
 
-The release contains code, dependencies, and schema-only examples. It does not
-contain benchmark imagery, derived feature archives, checkpoints, predictions,
-sample identifiers, coordinates, or experiment results. Obtain imagery under
-the applicable provider terms and supply authorized local data before running
-the pipeline.
+The release contains code, dependencies, schema-only examples, and selected
+CityLens aggregate results under `results/`. Obtain imagery under the applicable provider terms
+and supply authorized local data before running the pipeline.
 
-The separate aggregate-results archive contains selected CityLens city-level
-metrics and grouped-bootstrap summaries. It contains no sample-level records.
+The tables in `results/` contain city-level metrics and grouped-bootstrap
+summaries only; they contain no sample-level records.
 
 ## Setup
 
@@ -25,9 +23,6 @@ Python 3.10 and a CUDA-compatible PyTorch installation are recommended.
 ```bash
 python -m pip install -r requirements.txt
 ```
-
-Run commands from the archive root. The scripts add their own directory to the
-import path; do not change into `scripts/` first.
 
 ## Input schemas
 
@@ -119,11 +114,6 @@ python scripts/audit_worldpop100m_crossfold.py --help
 - **Relabeling, audits, and summaries:** the `relabel_*.py`, `audit_*.py`,
   `bootstrap_strict_label_isolated_kd.py`, and
   `summarize_strict_label_isolated_kd.py` scripts.
-
-The code package covers the primary single-stage test-time conditions, strict
-prediction distillation, fixed-model distance replacement, and fold/raster
-audits. It does not include the separate Healthcare two-part sensitivity
-launcher or its Brier/AUROC export.
 
 ## License
 
